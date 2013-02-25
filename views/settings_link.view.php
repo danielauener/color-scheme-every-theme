@@ -1,0 +1,1 @@
+<a href="options-general.php?page=color-scheme-every-theme"><?php _e('Settings', 'cset'); ?></a>

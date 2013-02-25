@@ -1,0 +1,72 @@
+# Copyright (C) 2013 Color Scheme every Theme
+# This file is distributed under the same license as the Color Scheme every Theme package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Color Scheme every Theme 1.0\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/color-scheme-every-theme\n"
+"POT-Creation-Date: 2013-02-24 21:48:30+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2013-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: classes/Cset.class.php:40 classes/Cset.class.php:44
+#: views/options.view.php:8
+msgid "Color Schemes"
+msgstr ""
+
+#: classes/Options.class.php:56
+msgid "You do not have sufficient permissions to access this page."
+msgstr ""
+
+#: views/options.view.php:3
+msgid "Color Scheme every Theme settings"
+msgstr ""
+
+#: views/options.view.php:11
+msgid "There is no color scheme generatad for your current theme."
+msgstr ""
+
+#: views/options.view.php:19
+msgid ""
+"Add this code to your <b>functions.php</b>, for every color scheme you want "
+"to add, and modify the color codes as you whish."
+msgstr ""
+
+#: views/options.view.php:23
+msgid "These are the default colors, extracted from your current theme."
+msgstr ""
+
+#: views/options.view.php:30
+msgid "Regenerate Color Scheme"
+msgstr ""
+
+#: views/options.view.php:30
+msgid "Generate Color Scheme"
+msgstr ""
+
+#: views/settings_link.view.php:1
+msgid "Settings"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Color Scheme every Theme"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "http://www.danielauener.com/color-scheme-every-theme"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Make custom color schemes for every theme"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "@danielauener"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://www.danielauener.se"
+msgstr ""
