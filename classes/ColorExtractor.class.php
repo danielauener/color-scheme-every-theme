@@ -69,8 +69,10 @@
 		public function get_default_scheme() {
 			if ($this->color_scheme_exists()) {
 				$scheme = file_get_contents($this->current_css_tmpl);
-				if (preg_match('/\/\*(.|\\n|\\r)+\*\//',$scheme, $default_colors)) {
-					return $default_colors[0];
+				$start = strpos($scheme,"/*");
+				$stop = strpos($scheme,"*/");
+				if ($start >= 0 && $stop >= 0) {
+					return substr($scheme,$start,$stop-$start+2);
 				}
 			}
 			return false;
