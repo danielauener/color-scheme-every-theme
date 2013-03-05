@@ -13,4 +13,4 @@ Follow the instructions adjust your functions.php.
 4. Go to 'Appearance/Themes' and click on 'Customize' for your current theme.
 5. Choose the color theme you just added and save the changes
 
-More detailed usage instructions on [danielauener.com/new-wordpress-plugin-color-scheme-every-theme](http://www.danielauener.com/new-wordpress-plugin-color-scheme-every-theme)
+More detailed usage instructions on [danielauener.com/color-scheme-every-theme](http://www.danielauener.com/color-scheme-every-theme)
