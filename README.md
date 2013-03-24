@@ -14,3 +14,5 @@ Follow the instructions adjust your functions.php.
 5. Choose the color theme you just added and save the changes
 
 More detailed usage instructions on [danielauener.com/color-scheme-every-theme](http://www.danielauener.com/color-scheme-every-theme)
+
+Read about the new features in version 2.0 on [http://www.danielauener.com/plugin-update-color-scheme-every-theme/](http://www.danielauener.com/plugin-update-color-scheme-every-theme/).
