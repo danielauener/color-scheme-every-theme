@@ -4,7 +4,7 @@ Donate link: http://www.danielauener.com/
 Tags: color scheme, themes, customizer, css, customization
 Requires at least: 3.4
 Tested up to: 3.5
-Stable tag: trunk
+Stable tag: 1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -25,6 +25,11 @@ settings page.
 4. You go to the theme customizer and choose your custom color scheme in the
 'Color schemes' section.
 
+A more detailed description is available on my blog [http://www.danielauener.com/color-scheme-every-theme/](http://www.danielauener.com/color-scheme-every-theme/). You are wellcome to give feedback/ask questions directly on my blog as well.
+
+There is even a github-repository on: [https://github.com/danielauener/color-scheme-every-theme/](http://github.com/danielauener/color-scheme-every-theme/)
+
+
 == Installation ==
 
 1. Upload the `color-scheme-every-theme` folder to the `/wp-content/plugins/` directory
@@ -38,9 +43,12 @@ Follow the instructions adjust your functions.php.
 
 == Screenshots ==
 
-1. Widget settings
+1. Theme customizer
 
 == Changelog ==
 
 = 1.0 =
 * Version 1.0 done
+
+= 1.1 =
+* Fixed a bug that resulted in a blank page after generating the color scheme - thanks to Stiaan for reporting the bug and Ulrich P for helping me to reproduce it!

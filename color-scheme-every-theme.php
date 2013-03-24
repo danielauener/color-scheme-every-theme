@@ -3,7 +3,7 @@
 	Plugin Name: Color Scheme every Theme
 	Plugin URI: http://www.danielauener.com/color-scheme-every-theme
 	Description: This plugin lets you change the entire color scheme of the current theme via the theme customizer.
-	Version: 1.0
+	Version: 1.1
 	Author: @danielauener
 	Author URI: http://www.danielauener.se
 	License: GPL2

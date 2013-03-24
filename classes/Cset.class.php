@@ -12,8 +12,13 @@
 
 	    	$this->options = new Cset_Options();
 
+			$this->schemes = array_merge(
+				$this->options->get_schemes(),
+				$this->schemes
+			);
+
 			add_action( 'customize_register', array($this,'customize_register') );	
-			add_action( 'wp_head', array($this,'customize_css' ) );    	
+			add_action( 'wp_head', array($this,'customize_css' ) );
 	    
 	    }
 
@@ -52,15 +57,47 @@
 		public function customize_css() {
 			if (isset($this->schemes[get_theme_mod('color_scheme')])) {
 				$customized_script = new Cset_View("custom_styles");
-				$css_extractor = new Cset_ColorExtractor();
-				$styles = $css_extractor->get_custom_styles();
+
+				$styles = "";
+				if (file_exists(($current_css_tmpl = $this->options->get_css_templ()))) {
+					$styles = file_get_contents($current_css_tmpl);
+				}
+
 				$styles = str_replace(
 					array_reverse(array_keys($this->schemes[get_theme_mod('color_scheme')])),
 					array_reverse($this->schemes[get_theme_mod('color_scheme')]),
 					$styles
 				);
+
+				$styles = str_replace('$scheme_name ','',$styles);
+
 				$customized_script->set('styles', $styles);
 				echo $customized_script->render();				
+			}
+
+			if (get_option('dynamic_theme_colors')) {
+
+				$customized_js = new Cset_View("js_schemes_array");
+				$all_styles = "";
+				$styles = file_get_contents($current_css_tmpl);
+				$schemes = array();
+				
+				foreach ($this->schemes as $name => $colors) {
+					$name = 'cset-scheme-'.$name;
+					$mod_styles = str_replace(
+						array_reverse(array_keys($colors)),
+						array_reverse($colors),
+						$styles
+					);
+					$all_styles .= str_replace('$scheme_name','.'.$name,$mod_styles);	
+					$schemes[] = $name; 				
+				}
+
+				$customized_script->set('styles', $all_styles);
+				echo $customized_script->render();
+
+				$customized_js->set('schemes',$schemes);
+				echo $customized_js->render();
 			}
 		}
 	} 
